@@ -33,7 +33,7 @@ function verifyOptions(options) {
     throw new TypeError(`options.chain must be a boolean`);
   }
   if (typeof options.descriptor !== "boolean") {
-    throw new TypeError(`options.chain must be a boolean`);
+    throw new TypeError(`options.descriptor must be a boolean`);
   }
 }
 
