@@ -1,13 +1,17 @@
 {
   "name": "copying",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A shallow copy tool that makes you make decisions",
   "main": "index.js",
   "scripts": {
     "pretest": "prettier --write *.js",
     "test": "nyc --branches 100 --statements 100 --functions 100 --lines 100 node test.js"
   },
-  "keywords": ["copy", "shallow", "copying"],
+  "keywords": [
+    "copy",
+    "shallow",
+    "copying"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bengl/copying.git"
