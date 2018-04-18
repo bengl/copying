@@ -1,6 +1,6 @@
 {
   "name": "copying",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A shallow copy tool that makes you make decisions",
   "main": "index.js",
   "scripts": {
