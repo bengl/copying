@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "prettier --write *.js",
-    "test": "nyc --branches 100 --statements 100 --functions 100 --lines 100 node test.js"
+    "test": "nyc --branches 100 --statements 100 --functions 100 --lines 100 imhotap"
   },
   "keywords": [
     "copy",
@@ -19,8 +19,12 @@
   "author": "Bryan English <bryan@bryanenglish.com>",
   "license": "MIT",
   "devDependencies": {
+    "imhotap": "^1.0.0",
     "nyc": "^11.4.1",
     "pitesti": "^2.3.0",
     "prettier": "^1.10.2"
+  },
+  "imhotap": {
+    "files": "test/*.js"
   }
 }

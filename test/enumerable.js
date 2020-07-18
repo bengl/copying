@@ -6,6 +6,8 @@ const {
   dest, src, notHave, isValue, isGetterValue, g
 } = require('./helpers');
 
+const test = require('pitesti')()
+
 test`enumerable, no chain, no descriptor`(() => {
   const copy = copying({ enumerator: "enumerable", chain: false, descriptor: false });
   const result = copy({}, dest, src);
@@ -57,3 +59,5 @@ test`enumerable, chain, descriptor`(() => {
   notHave(result, "f");
   notHave(result, g);
 });
+
+test();

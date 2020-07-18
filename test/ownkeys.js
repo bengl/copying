@@ -6,6 +6,8 @@ const {
   dest, src, notHave, isValue, isGetterValue, g
 } = require('./helpers');
 
+const test = require('pitesti')()
+
 test`ownKeys, no chain, no descriptor`(() => {
   const copy = copying({ enumerator: "ownKeys", chain: false, descriptor: false });
   const result = copy({}, dest, src);
@@ -57,3 +59,5 @@ test`ownKeys, chain, descriptor`(() => {
   isValue(result, "f", 6);
   isValue(result, g, 7);
 });
+
+test();

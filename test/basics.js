@@ -3,6 +3,8 @@
 const copying = require("../");
 const assert = require("assert");
 
+const test = require('pitesti')()
+
 test`options`(() => {
   assert.throws(() => copying(), TypeError);
   assert.throws(() => copying({}), TypeError);
@@ -40,3 +42,5 @@ test`inputs`(() => {
   assert.throws(() => copy({}, undefined), TypeError);
   assert.throws(() => copy(undefined, {}), TypeError);
 });
+
+test();
