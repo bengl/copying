@@ -4,20 +4,20 @@ const {
   getOwnPropertyDescriptor,
   defineProperty,
   getPrototypeOf,
-  ownKeys
+  ownKeys,
 } = Reflect;
 const { keys: objectKeys, hasOwnProperty } = Object;
 
 const enumerators = {
   enumerable: enumerableEnumerator,
   ownKeys: ownKeysEnumerator,
-  keys: keysEnumerator
+  keys: keysEnumerator,
 };
 
 const chainEnumerators = {
   enumerable: chainEnumerableEnumerator,
   ownKeys: chainOwnKeysEnumerator,
-  keys: chainKeysEnumerator
+  keys: chainKeysEnumerator,
 };
 
 function verifyOptions(options) {
